@@ -12,8 +12,11 @@
     </head>
 
     <body ng-app="Ng-cribs" ng-controller="cribsController">
+        <h3>Expression Exampls</h3>
+        <p>My first expression: {{ 5 + 5 }}</p>
+        <h2>Arrays Example</h2>
         <div class="well" ng-repeat="crib in cribs">
-            <p>My first expression: {{ 5 + 5 }}</p>
+
             <h3>{{crib.address}}</h3>
             <strong>TYPE:</strong><p> {{crib.type}}</p>
             <strong>Description:</strong><p> {{crib.description}}</p>
