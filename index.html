@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="utf-8">
-        <title>Ng-cribs</title>
+        <title>AngularJs</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
             integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
@@ -11,25 +11,25 @@
             crossorigin="anonymous"></script>
     </head>
 
-    <body ng-app="Ng-cribs" ng-controller="cribsController">
+    <body ng-app="MyApp" ng-controller="MyController">
         <h3>Expression Exampls</h3>
         <p>My first expression: {{ 5 + 5 }}</p>
         <h2>Arrays Example</h2>
-        <div class="well" ng-repeat="crib in cribs">
+        <div class="well" ng-repeat="myobj in obj">
 
-            <h3>{{crib.address}}</h3>
-            <strong>TYPE:</strong><p> {{crib.type}}</p>
-            <strong>Description:</strong><p> {{crib.description}}</p>
-            <strong>Price:</strong><p> {{crib.price | currency}}</p>
+            <h3>{{myobj.address}}</h3>
+            <strong>TYPE:</strong><p> {{myobj.type}}</p>
+            <strong>Description:</strong><p> {{myobj.description}}</p>
+            <strong>Price:</strong><p> {{myobj.price | currency}}</p>
 
         </div>
-        <pre>{{cribs | json}}</pre>
+        <pre>{{obj | json}}</pre>
     </body>
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
     <script src="app.js"></script>
-    <script src="scripts/cribsController.js"></script>
+    <script src="scripts/Controller.js"></script>
 
 </html>

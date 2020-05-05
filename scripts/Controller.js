@@ -1,8 +1,8 @@
 angular
-        .module('Ng-cribs',[])
-        .controller('cribsController',function($scope){
+        .module('MyApp',[])
+        .controller('MyController',function($scope){
 
-                $scope.cribs =[
+                $scope.obj =[
                     {
                         "type" :"condo",
                         "price":"2200000",
